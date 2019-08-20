@@ -23,3 +23,21 @@ spec:
             cpu: "500m"
         ports:
         - containerPort: 5000
+        env:
+          - name: REDIS_HOST
+            value: redis
+          - name: REDIS_PORT
+            value: "6379"
+          - name: PGHOST
+            value: postgres
+          - name: PGPORT
+            value: "5432"
+          - name: PGUSER
+            value: postgres
+          - name: PGDATABASE
+            value: postgres
+          - name: PGPASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: postgres-password
+                key: PGPASSWORD 
