@@ -11,9 +11,9 @@ spec:
       paths:
       - path: /
         backend:
-          serviceName: client
+          serviceName: client-cip
           servicePort: 3000
       - path: /api/
         backend:
-          serviceName: api
+          serviceName: api-cip
           servicePort: 5000

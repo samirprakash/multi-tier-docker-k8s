@@ -23,6 +23,6 @@ spec:
             cpu: "500m"
         env:
         - name: REDIS_HOST
-          value: redis
+          value: redis-cip
         - name: REDIS_PORT
           value: "6379"

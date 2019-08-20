@@ -25,11 +25,11 @@ spec:
         - containerPort: 5000
         env:
         - name: REDIS_HOST
-          value: redis
+          value: redis-cip
         - name: REDIS_PORT
           value: "6379"
         - name: PGHOST
-          value: postgres
+          value: postgres-cip
         - name: PGPORT
           value: "5432"
         - name: PGUSER
