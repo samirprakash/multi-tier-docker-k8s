@@ -6,12 +6,12 @@ spec:
   selector:
     matchLabels:
       app: postgres
-      component: postgres
+      component: database
   template:
     metadata:
       labels:
         app: postgres
-        component: postgres
+        component: database
     spec:
       volumes:
       - name: postgres-volume

@@ -7,12 +7,12 @@ spec:
   selector:
     matchLabels:
       app: api
-      component: api
+      component: server
   template:
     metadata:
       labels:
         app: api
-        component: api
+        component: server
     spec:
       containers:
       - name: api

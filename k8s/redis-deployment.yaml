@@ -7,12 +7,12 @@ spec:
   selector:
     matchLabels:
       app: redis
-      component: redis
+      component: cache
   template:
     metadata:
       labels:
         app: redis
-        component: redis
+        component: cache
     spec:
       containers:
       - name: redis
