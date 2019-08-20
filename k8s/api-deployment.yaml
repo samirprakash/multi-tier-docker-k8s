@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: api
+      component: api
+  template:
+    metadata:
+      labels:
+        app: api
+        component: api
+    spec:
+      containers:
+      - name: api
+        image: samirprakash/multi-tier-docker-api
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 5000
