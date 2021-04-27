@@ -12,6 +12,6 @@
   "license": "MIT",
   "dependencies": {
     "nodemon": "^2.0.2",
-    "redis": "^3.0.2"
+    "redis": "^3.1.1"
   }
 }
